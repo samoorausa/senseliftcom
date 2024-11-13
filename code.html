@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenseLift</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+        }
+        .header, .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .header h1 {
+            margin: 10px 0;
+        }
+        .header p {
+            margin: 0;
+        }
+        .content {
+            margin: 20px;
+        }
+        .founder, .products, .testimonials, .contact {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .founder img, .product img, .testimonial img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            flex-basis: 45%;
+            margin: 10px 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-left: 5px solid #00bfa5;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, .contact textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #00bfa5;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact button:hover {
+            background-color: #009c87;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://scontent.fruh2-1.fna.fbcdn.net/v/t39.30808-6/465912103_1069057698345567_6957785880362899431_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=s7WpXEObQ6UQ7kNvgHsHKSG&_nc_zt=23&_nc_ht=scontent.fruh2-1.fna&_nc_gid=Au4zPyG169_6emVgKKSrTHz&oh=00_AYAZSp_jMZjocwL9ZZiHOD6eU2zeE4jc3yd2bsd0jshbzw&oe=673A82A5" alt="SenseLift Logo">
+        <h1>SenseLift</h1>
+        <p>Restoring Clarity, Reviving Movement</p>
+    </div>
+    <div class="content">
+        <div class="founder fade-in">
+            <h2 class="section-title">Founder: Samer Gharib</h2>
+            <img src="https://scontent.fruh2-1.fna.fbcdn.net/v/t39.30808-6/465912226_1069055195012484_9164445050211909056_n.jpg?stp=dst-jpg_s640x640&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ChnLpYCMKHgQ7kNvgHEWwdW&_nc_zt=23&_nc_ht=scontent.fruh2-1.fna&_nc_gid=Ak7A5h7GQGIK2y4hpbHqxif&oh=00_AYBPo-kVpSNnlkY9Fh95Cm_18I2RbJd5f2lJo3MDy5mi0Q&oe=673A7905" alt="Samer Gharib">
+            <p>Samer Gharib founded SenseLift with a mission to enhance the quality of life through innovative sensory products.</p>
+        </div>
+        <div class="products fade-in">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYsywCcBwXnCBM5Ye_9gghNJ8Alyf6-r1Aw&s" alt="Glasses">
+                <h3>High-Quality Glasses</h3>
+                <p>Our glasses are designed to provide the best clarity and comfort for your eyes.</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-z_CiJNyMQfpwFrYlx6KfVR4UdfNmR_EOfuvM7zQlqnAIOVFw7eHMRSX27WcJGEk5-zg&usqp=CAU" alt="Hearing Aid">
+                <h3>Advanced Hearing Aids</h3>
+                <p>Experience the best in hearing technology with our advanced hearing aids.</p>
+            </div>
+            <div class="product">
+                <img src="https://s3.amazonaws.com/static.organiclead.com/Site-cca01a99-7901-4da0-9613-ded5f6e8aa06/shutterstock_1422250754_2_.jpg" alt="Lenses">
+                <h3>Innovative Lenses</h3>
+                <p>Our lenses are designed to enhance vision clarity and comfort.</p>
+            </div>
+        </div>
+        <div class="testimonials fade-in">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="testimonial">
+                <img src="https://www.kraywoods.com/cdn/shop/articles/unnamed_86a51ea9-6bfe-4e2d-a954-006429f13349.jpg?v=1726511460&width=1100" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>"SenseLift has completely changed my life. The glasses I got from them are the best I've ever had."</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://compote.slate.com/images/fd7c9116-6ffa-44e4-a0b6-a0023020fa17.jpeg?crop=1560%2C1040%2Cx0%2Cy0" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+                <p>"Thanks to SenseLift's hearing aids, I can hear my grandchildren clearly for the first time in years."</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYsywCcBwXnCBM5Ye_9gghNJ8Alyf6-r1Aw&s" alt="Ali Mohammed">
+                <h3>Ali Mohammed</h3>
+                <p>"SenseLift's products are exceptional, and their customer service is outstanding. I highly recommend them."</p>
+            </div>
+            <div class="testimonial"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-z_CiJNyMQfpwFrYlx6KfVR4UdfNmR_EOfuvM7zQlqnAIOVFw7eHMRSX27WcJGEk5-zg&usqp=CAU" alt="Sara Al-Farsi"> <h3>Sara Al-Farsi</h3> <p>"The quality of the products from SenseLift is unparalleled. Their glasses have made a huge difference in my daily life."</p> </div> </div> <div class="contact fade-in"> <h2 class="section-title">Contact Us</h2> <form> <input type="text" placeholder="Your Name" required> <input type="email" placeholder="Your Email" required> <textarea rows="5" placeholder="Your Message" required></textarea> <button type="submit">Send Message</button> </form> </div> </div> <div class="footer"> <div class="video">
+    <h2 class="video-title">The Future with SenseLift</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lS4l22V8VKc?si=HLH7fKxSW6w65z5X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+ <p>© 2024 SenseLift. All rights reserved.</p> </div> </body> </html>
